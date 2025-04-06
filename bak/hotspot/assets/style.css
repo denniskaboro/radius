@@ -1,0 +1,92 @@
+
+.sonar-wrapper {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    padding: 4rem 0;
+}
+
+.sonar-wrapper a {
+    text-decoration: none !important;
+}
+
+#row1 {
+    background-color: #00a835;
+}
+
+#row11 {
+    background-color: #543c79;
+}
+
+#row2 {
+    background-color: #7243d4;
+}
+
+#row22 {
+    background-color: #227a80;
+}
+
+#row3 {
+    background-color: #c83b5c;
+}
+
+#row33 {
+    background-color: #6b3451;
+}
+
+#row4 {
+    background-color: #b19735;
+}
+
+#row44 {
+    background-color: #537a19;
+}
+
+/* The circle */
+.sonar-emitter {
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+
+}
+
+/* the 'wave', same shape and size as its parent */
+.sonar-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.sonar-wrapper center {
+    color: black;
+    font-size: 25px;
+}
+
+
+/*
+ *   Animate!
+ *     NOTE: add browser prefixes where needed.
+ *     */
+.sonar-wave {
+    animation: sonarWave 2s linear infinite;
+}
+
+@keyframes sonarWave {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+

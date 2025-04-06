@@ -1,0 +1,16 @@
+{
+            "TransactionType": "Customer Merchant Payment",
+            "TransID": "RD10567SIQ",
+            "TransTime": "20230401141111",
+            "TransAmount": "8000.00",
+            "BusinessShortCode": "7599435",
+            "BillRefNumber": "",
+            "InvoiceNumber": "0",
+            "OrgAccountBalance": "8323.90",
+            "ThirdPartyTransID": "",
+            "MSISDN": "254722152478",
+            "FirstName": "SAMUEL",
+            "MiddleName": "ANTONY",
+            "LastName": "GIKABA"
+        }
+        

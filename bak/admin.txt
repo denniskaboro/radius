@@ -1,0 +1,3 @@
+Acct-Session-Id=81a06520
+User-Name=Bedan
+NAS-IP-Address=10.8.0.6

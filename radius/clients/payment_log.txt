@@ -1,0 +1,16 @@
+{
+            "TransactionType": "Customer Merchant Payment",
+            "TransID": "QDJ7MI2U9B",
+            "TransTime": "20220419143018",
+            "TransAmount": "120.00",
+            "BusinessShortCode": "7599435",
+            "BillRefNumber": "",
+            "InvoiceNumber": "",
+            "OrgAccountBalance": "123.40",
+            "ThirdPartyTransID": "",
+            "MSISDN": "254712700833",
+            "FirstName": "Pungo",
+            "MiddleName": "Edirisa",
+            "LastName": "Kagezi"
+        }
+        

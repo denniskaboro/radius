@@ -1,0 +1,5 @@
+Options -Indexes
+
+RewriteEngine on
+RewriteRule ^(config/ajax).* ../config/ajax.php [NC,L]
+RewriteRule ^([^/]*)/([^/]*)$ redirect.php?url=$1&$2 [NC]

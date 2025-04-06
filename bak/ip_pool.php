@@ -1,0 +1,59 @@
+<?php
+
+use PEAR2\Net\RouterOS;
+
+include 'PEAR2/Autoload.php';
+include 'includes/router.php';
+include('config/data.php');
+if (isset($_GET['val'])) {
+    $val = $_GET['val'];
+    try {
+        $util = new RouterOS\Util($client = new RouterOS\Client($ip, $user, $pass,$port));
+        $setRequest = new RouterOS\Request(
+            '/ip pool remove'
+        );
+        $setRequest
+            ->setArgument('.id', $val);
+        $client->sendSync($setRequest);
+        if ($client) {
+            echo "IP Pool Remove Successfully.";
+        }
+    } catch (Exception $e) {
+        echo "<div>Unable to connect to RouterOS.</div>";
+    }
+}
+try {
+    $util = new RouterOS\Util($client = new RouterOS\Client($ip, $user, $pass,$port));
+
+    ?>
+    <h3>IP Pool List:</h3>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Pool Name</th>
+            <th>IP Range</th>
+            <th>Delete Pool</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($util->setMenu('/ip pool')->getAll() as $entry) { ?>
+            <tr>
+                <td><?php echo $entry('name'); ?></td>
+                <td>
+                    <?php foreach (explode(',', $entry('ranges')) as $topic) { ?>
+                        <span><?php echo $topic; ?></span>
+                    <?php } ?>
+                </td>
+                <td><a class="btn btn-danger" href="ip_pool.php?val=<?php echo $entry('.id'); ?>" onClick='myFunction()'
+                       id="click">
+                        <i class="icon-edit"><span class="glyphicon glyphicon-trash"></span></i></a></td>
+
+            </tr>
+        <?php } ?>
+        </tbody>
+    </table>
+<?php } catch (Exception $e) { ?>
+    <div>Unable to connect to RouterOS.</div>
+<?php } ?>
+
+<?php include 'includes/footer.php'; ?>

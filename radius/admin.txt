@@ -1,0 +1,3 @@
+Acct-Session-Id=8190141d
+User-Name=N29
+NAS-IP-Address=10.8.0.14

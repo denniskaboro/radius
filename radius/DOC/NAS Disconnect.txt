@@ -1,0 +1,1 @@
+Acct-Session-Id=D91FE8E51802097 User-Name=somebody NAS-IP-Address=10.0.0.1 | radclient -x 10.0.0.1:3799 disconnect ''secret''

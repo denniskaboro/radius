@@ -1,0 +1,299 @@
+
+html {
+    background-color: #66512c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.dataTables_filter {
+    color: white !important;
+}
+
+.dataTables_info {
+    color: white !important;
+}
+
+.paging_simple_numbers {
+    color: white !important;
+}
+
+#blur {
+    /* The image used */
+    filter: blur(35px) !important;
+    -webkit-filter: blur(35px) !important;
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.nav_menu {
+    float: left;
+    background: none !important;
+    border-bottom: 1px solid #e4dad2;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.nav-sm .nav.side-menu li a {
+    text-align: center !important;
+    font-weight: 400;
+    font-size: 11px !important;
+    padding: 10px 5px
+}
+
+.nav.navbar-nav > li > {
+    color: #f7f7f7 !important;
+    font-size: 13px;
+}
+
+body .container.body .right_col {
+    height: 1000px;
+    background-color: rgb(0, 0, 0) !important; /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2) !important; /* Black w/opacity/see-through */
+/ / background-color: #826534 !important;
+}
+
+.left_col {
+    background-color: rgba(42, 51, 55, 0.36) !important;
+}
+
+.navbar-left li a:hover {
+    background: none !important;
+}
+
+.navbar-left li {
+    border-top: 1px #2e6da4 dotted;
+}
+
+.dropdown-menu {
+
+    background-color: #ddd !important;
+    min-width: 180px !important;
+}
+
+.pagination > li > a:hover {
+    background-color: #babcbf !important;
+}
+
+.navbar {
+    border-radius: 0px !important;
+    background-color: rgba(42, 51, 55, 0.36) !important;
+    color: white !important;
+
+}
+
+table.dataTable thead th, table.dataTable tfoot th {
+    font-weight: bold;
+    font-size: 14px !important;
+    padding: 2px 4px !important;
+    background: #115451 !important;
+}
+
+table.dataTable tbody td {
+    padding: 4px 6px !important;
+    color: #fff0eb !important;
+    line-height: 1 !important;
+}
+
+.table tbody tr {
+    font-size: 14px !important;
+}
+
+.table tbody tr td a {
+    font-size: 14px !important;
+}
+
+.btn {
+    padding: 4px 8px !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+}
+
+select {
+    background: rgba(70, 92, 102, 0.92);
+    width: 70px;
+    height: 30px;
+}
+
+table.dataTable tbody tr {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.dataTables_filter {
+    color: #91758a !important;
+    font-size: 15px;
+}
+
+.table thead tr {
+    background-color: rgba(21, 53, 74, 0.75);
+    color: #ceefde;
+    font-size: 16px;
+}
+
+.table tbody tr {
+    background-color: rgba(89, 177, 159, 0.21);
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.table tbody tr td a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.form-control {
+    background-color: #5e5e5e !important;
+    color: #ffffff !important;
+}
+
+input[type=search] {
+    background-color: rgba(89, 177, 159, 0.21);
+!important;
+    color: #ffffff !important;
+    height: 35px;
+    border-radius: 3px;
+}
+
+label {
+    color: white;
+    font-size: 16px;
+}
+
+.nav li a:hover {
+    font-size: 16px;
+    background: none !important;
+}
+
+.sonar-wrapper {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    padding: 8rem 0;
+}
+
+.sonar-wrapper a {
+    text-decoration: none !important;
+}
+
+/* The circle */
+.sonar-emitter {
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    background-color: #602c8f;
+}
+
+/* the 'wave', same shape and size as its parent */
+.sonar-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: #803a96;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.sonar-wrapper center {
+    color: black;
+    font-size: 25px;
+}
+
+
+/*
+ *   Animate!
+ *     NOTE: add browser prefixes where needed.
+ *     */
+.sonar-wave {
+    animation: sonarWave 2s linear infinite;
+}
+
+@keyframes sonarWave {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .table-responsive-sm {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive-sm > .table-bordered {
+        border: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .table-responsive-md {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive-md > .table-bordered {
+        border: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .table-responsive-lg {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive-lg > .table-bordered {
+        border: 0;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .table-responsive-xl {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive-xl > .table-bordered {
+        border: 0;
+    }
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive > .table-bordered {
+    border: 0;
+}
+

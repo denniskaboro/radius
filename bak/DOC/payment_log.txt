@@ -1,0 +1,16 @@
+{
+            "TransactionType": "Pay Bill",
+            "TransID": "REL24Q3GL2",
+            "TransTime": "20230521224056",
+            "TransAmount": "70.00",
+            "BusinessShortCode": "4078711",
+            "BillRefNumber": "N59",
+            "InvoiceNumber": "",
+            "OrgAccountBalance": "98361.00",
+            "ThirdPartyTransID": "",
+            "MSISDN": "254768635933",
+            "FirstName": "JOSEPH",
+            "MiddleName": "MBUTHIA",
+            "LastName": "NGARE"
+        }
+        
